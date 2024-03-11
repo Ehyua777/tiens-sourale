@@ -1,23 +1,120 @@
-.container1 {
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 100% 100% 100%;
+body {
 
-    .container2 {
-        background-color: mediumslateblue;
-        border: 1px solid red;
-        padding: 5px;
-        width: 100%;
-        grid-row-start: 1;
-        grid-row-end: 1;
-        grid-column-start: 2;
-        grid-column-end: 2;
+    @media (max-width: 767px) {
+        .spacing {
+            height: 200px;
+        }
     }
 
-}
 
-div {
-    border: 1px solid black;
-    margin: 5px;
-    border-radius: 4px;
+    a {
+        text-decoration: none;
+    }
+
+
+    header {
+        background-color: rgb(0, 0, 0, 0.7);
+
+        .header-top-bar {
+            background-color: black;
+
+
+            a {
+                font-size: large;
+                color: white;
+            }
+        }
+
+        nav {
+
+            a {
+
+                img {
+                    width: 75px;
+                    height: 65px;
+                }
+
+            }
+
+            .navbar-nav {
+                .nav-link {
+                    color: white;
+                    font-size: large;
+                    /* Change la couleur du texte en blanc */
+                }
+            }
+        }
+    }
+
+    main {
+
+        #product-categories {
+            a {
+                border: 2px solid white;
+                color: white;
+                font-size: large;
+                font-weight: normal;
+                width: 200px;
+                border-radius: 20px
+            }
+
+            a:hover {
+                background-color: white;
+                color: lightslategrey;
+                font-weight: bolder;
+            }
+        }
+
+        #about {
+            article {
+                width: 90%;
+
+                a {
+                    display: inline-block;
+                    border: 2px solid green;
+                    width: 200px;
+                    border-radius: 99px;
+                    color: #00893e;
+                    cursor: pointer;
+                    outline: none;
+                    transition: transform 0.5s;
+                }
+
+                a:hover {
+                    background-color: #00893e;
+                    color: white;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        #products {
+            a {
+                border: 2px solid rgb(7, 243, 82);
+                color: rgb(7, 243, 82);
+                font-size: large;
+                font-weight: normal;
+                width: 200px;
+                border-radius: 20px
+            }
+
+            a:hover {
+                background-color: rgb(7, 243, 82);
+                color: white;
+            }
+        }
+
+    }
+
+    footer {
+        background-color: rgb(0, 0, 0, 0.6);
+
+        i {
+            color: white;
+        }
+
+        span {
+            color: white;
+        }
+    }
 }
